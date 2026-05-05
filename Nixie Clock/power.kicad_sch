@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "2e6fa9cb-15d3-48aa-85ab-e47529ea9a82")
 	(paper "A4")
+	(title_block
+		(title "Nixie Clock")
+		(date "2026-04-04")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
 			(pin_names
@@ -3836,6 +3841,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VBUS"
 			(power)
 			(pin_numbers
@@ -4150,13 +4256,13 @@
 		(uuid "0d7da3b8-7793-47bc-95c3-6943028bf098")
 	)
 	(junction
-		(at 187.96 66.04)
+		(at 96.52 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "10e03e5b-af10-476c-8d97-f89cb94b0a24")
+		(uuid "10dac46e-6cb4-4847-b152-669b701e59c0")
 	)
 	(junction
-		(at 34.29 104.14)
+		(at 34.29 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d51426b-05d8-4e3f-bd73-de543c2b32f3")
@@ -4252,12 +4358,6 @@
 		(uuid "74c3ee5f-5361-48ff-bd20-38b731c54615")
 	)
 	(junction
-		(at 96.52 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77d6f05c-db5c-4ba4-8c92-52f303d93659")
-	)
-	(junction
 		(at 86.36 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4268,12 +4368,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "866ad4b9-4ced-4c53-a22d-5eda2b8e45bc")
-	)
-	(junction
-		(at 201.93 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9377240b-9683-4a90-8153-02217ff5442f")
 	)
 	(junction
 		(at 201.93 58.42)
@@ -4392,16 +4486,6 @@
 			(type default)
 		)
 		(uuid "1fcfc62e-3592-4201-9569-3a92b0195a21")
-	)
-	(wire
-		(pts
-			(xy 34.29 96.52) (xy 34.29 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24370054-7221-4c26-8d06-b349554b4669")
 	)
 	(wire
 		(pts
@@ -4535,7 +4619,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 104.14) (xy 34.29 105.41)
+			(xy 34.29 96.52) (xy 34.29 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4905,7 +4989,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 104.14) (xy 34.29 104.14)
+			(xy 26.67 96.52) (xy 34.29 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5053,26 +5137,6 @@
 		)
 		(uuid "f7f72ecd-b39f-4dbe-8bce-12b5e1fe2911")
 	)
-	(wire
-		(pts
-			(xy 187.96 66.04) (xy 201.93 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe5dce3e-88d4-444a-9f3e-623a001e8bb4")
-	)
-	(wire
-		(pts
-			(xy 201.93 66.04) (xy 214.63 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fec9e252-a628-48e5-a518-2fecfe354a85")
-	)
 	(global_label "Data-"
 		(shape bidirectional)
 		(at 52.07 71.12 0)
@@ -5161,6 +5225,98 @@
 			)
 		)
 	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 165.1 43.18) (xy 165.1 48.26) (xy 171.45 48.26) (xy 171.45 43.18)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 107c89be-6f57-4e57-a865-b203af0d5c14)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 100.33 125.73) (xy 100.33 130.81) (xy 106.68 130.81) (xy 106.68 125.73)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 96feb944-a376-45e9-995e-485f707db273)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 105.41 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d7f86ed9-92f4-430a-8c5b-8750ad817272")
+		(property "Netclass" "HV_180V"
+			(at 106.1085 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -66.04 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 171.45 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eedfe37e-8831-40d4-a386-73c47b8ac214")
+		(property "Netclass" "Power_12V"
+			(at 172.1485 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 0 -100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 85.09 69.85 180)
@@ -5171,7 +5327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "026e200c-46ca-427c-ba78-0a08edb67cba")
-		(property "Reference" "R60"
+		(property "Reference" "R35"
 			(at 87.63 68.5799 0)
 			(effects
 				(font
@@ -5189,7 +5345,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 86.868 69.85 90)
 			(effects
 				(font
@@ -5225,7 +5381,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R60")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -5241,7 +5397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02d99158-345c-4762-874e-1049f00cb798")
-		(property "Reference" "C29"
+		(property "Reference" "C48"
 			(at 119.38 151.5109 0)
 			(effects
 				(font
@@ -5259,7 +5415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
 			(at 116.5352 157.48 0)
 			(effects
 				(font
@@ -5295,7 +5451,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C29")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -5310,7 +5466,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "07b73793-97c7-4186-b92c-36cd1f027f3c")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR0109"
 			(at 55.88 107.95 0)
 			(effects
 				(font
@@ -5361,7 +5517,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR075")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -5377,7 +5533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07df663d-a175-4ba7-8408-8fc3444dc324")
-		(property "Reference" "C23"
+		(property "Reference" "C42"
 			(at 41.91 146.4309 0)
 			(effects
 				(font
@@ -5395,7 +5551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 39.0652 152.4 0)
 			(effects
 				(font
@@ -5431,7 +5587,73 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C23")
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 176.53 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08cdf71c-c493-4b17-9c4b-7a495f4d2c38")
+		(property "Reference" "#PWR0129"
+			(at 176.53 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 176.53 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4483fea-92e3-4d68-8149-b0dfbb4b8fb7")
+		)
+		(instances
+			(project "Nixie Clock"
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -5447,7 +5669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d211ffd-dfae-46ae-af4a-3ec601b19c17")
-		(property "Reference" "D27"
+		(property "Reference" "D22"
 			(at 110.49 121.92 0)
 			(effects
 				(font
@@ -5463,7 +5685,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 110.49 128.27 0)
 			(effects
 				(font
@@ -5517,7 +5739,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "D27")
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -5533,7 +5755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11a71ce7-bb23-4ef4-9b9b-0c7197adc4ae")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR0115"
 			(at 77.47 80.01 0)
 			(effects
 				(font
@@ -5583,7 +5805,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR079")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -5599,7 +5821,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13d38b96-e495-4967-a5db-0f7ca6b2ae39")
-		(property "Reference" "C31"
+		(property "Reference" "C52"
 			(at 205.74 60.0709 0)
 			(effects
 				(font
@@ -5617,7 +5839,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
 			(at 202.8952 66.04 0)
 			(effects
 				(font
@@ -5653,7 +5875,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C31")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -5669,7 +5891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ec801c8-509b-4271-9c01-b7e3404fa434")
-		(property "Reference" "R67"
+		(property "Reference" "R40"
 			(at 135.89 152.3999 0)
 			(effects
 				(font
@@ -5687,7 +5909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 131.572 153.67 90)
 			(effects
 				(font
@@ -5723,7 +5945,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R67")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -5739,7 +5961,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ff0da73-3522-47d5-a41c-8ede7e07f60a")
-		(property "Reference" "RV2"
+		(property "Reference" "RV1"
 			(at 135.89 142.2399 0)
 			(effects
 				(font
@@ -5757,7 +5979,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
 			(at 133.35 143.51 0)
 			(effects
 				(font
@@ -5796,7 +6018,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "RV2")
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -5812,7 +6034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21fa3cb7-db42-4c14-b71e-be9dabe0e205")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR0108"
 			(at 38.1 158.75 0)
 			(effects
 				(font
@@ -5862,7 +6084,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR085")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -5878,7 +6100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "228d0fcb-f3ff-4058-8169-92064cd68bdc")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR0130"
 			(at 187.96 72.39 0)
 			(effects
 				(font
@@ -5928,7 +6150,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR094")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -5944,7 +6166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "34f99c9d-18c0-4255-a8d6-a55aa1e972a5")
-		(property "Reference" "R66"
+		(property "Reference" "R39"
 			(at 135.89 130.8099 0)
 			(effects
 				(font
@@ -5962,7 +6184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 131.572 132.08 90)
 			(effects
 				(font
@@ -5998,7 +6220,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R66")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -6014,7 +6236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b2f5705-af36-4b17-a7ae-68db86f99e64")
-		(property "Reference" "D25"
+		(property "Reference" "D21"
 			(at 101.6 40.9574 90)
 			(effects
 				(font
@@ -6032,7 +6254,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 97.79 40.64 0)
 			(effects
 				(font
@@ -6077,7 +6299,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "D25")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -6093,7 +6315,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b8fba6f-ffd0-4c03-a45b-df67cdca00d8")
-		(property "Reference" "C32"
+		(property "Reference" "C50"
 			(at 146.05 142.2399 0)
 			(effects
 				(font
@@ -6111,7 +6333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 143.2052 147.32 0)
 			(effects
 				(font
@@ -6147,7 +6369,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C32")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -6163,7 +6385,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c61064b-4637-4351-afb0-046d85a71251")
-		(property "Reference" "L3"
+		(property "Reference" "L2"
 			(at 151.13 40.64 90)
 			(effects
 				(font
@@ -6171,7 +6393,7 @@
 				)
 			)
 		)
-		(property "Value" "150uH"
+		(property "Value" "100uH"
 			(at 151.13 43.18 90)
 			(effects
 				(font
@@ -6179,7 +6401,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
 			(at 151.13 45.72 0)
 			(effects
 				(font
@@ -6215,7 +6437,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "L3")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -6231,7 +6453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42f2710e-c679-4b2e-ae23-66056c0c2bd0")
-		(property "Reference" "C27"
+		(property "Reference" "C49"
 			(at 137.16 31.7499 0)
 			(effects
 				(font
@@ -6249,7 +6471,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 134.3152 36.83 0)
 			(effects
 				(font
@@ -6285,7 +6507,143 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C27")
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 96.52 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44a8de76-9b05-4a98-89cd-7ae27bb0696b")
+		(property "Reference" "C45"
+			(at 100.33 65.1509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220uF/16V"
+			(at 100.33 67.6909 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
+			(at 97.4852 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 96.52 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a10997ab-c782-4fcf-a54d-cc16e5fbc3b6")
+		)
+		(pin "2"
+			(uuid "e8ffa432-cf1f-4cd5-909e-1dc7ba5f375f")
+		)
+		(instances
+			(project ""
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
+					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 201.93 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ab8aac0-dfe1-4bfa-84b6-4bd37d8a399a")
+		(property "Reference" "#PWR0131"
+			(at 201.93 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bc7a881-ad4f-461b-b540-e8c2ff73304b")
+		)
+		(instances
+			(project "Nixie Clock"
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -6301,7 +6659,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c141532-261c-433a-bbf3-bec5143fabb7")
-		(property "Reference" "VR2"
+		(property "Reference" "VR1"
 			(at 151.13 50.8 0)
 			(effects
 				(font
@@ -6486,7 +6844,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "VR2")
+					(reference "VR1")
 					(unit 1)
 				)
 			)
@@ -6502,7 +6860,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fa2618a-036e-41a3-9029-1689b0edef3a")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR0122"
 			(at 104.14 163.83 0)
 			(effects
 				(font
@@ -6552,7 +6910,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR092")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -6568,7 +6926,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fff51a0-17e1-4775-bbcf-6303da4e58b9")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR0128"
 			(at 168.91 80.01 0)
 			(effects
 				(font
@@ -6619,7 +6977,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR091")
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -6635,7 +6993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50c094d0-2f62-4c0c-8e96-74c602a11538")
-		(property "Reference" "R61"
+		(property "Reference" "R36"
 			(at 100.33 31.7499 0)
 			(effects
 				(font
@@ -6653,7 +7011,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 33.02 90)
 			(effects
 				(font
@@ -6689,7 +7047,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R61")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -6705,7 +7063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58d9b4ce-16e0-4488-b06b-3f75d9e1a731")
-		(property "Reference" "J2"
+		(property "Reference" "J6"
 			(at 34.29 50.8 0)
 			(effects
 				(font
@@ -6721,7 +7079,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7051x"
 			(at 38.1 73.66 0)
 			(effects
 				(font
@@ -6796,77 +7154,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 96.52 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d521b34-b386-4021-8761-29609d5646cc")
-		(property "Reference" "C22"
-			(at 100.33 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "200uF/16V"
-			(at 100.33 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.4852 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 96.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "46ce1f0a-1eea-4bc7-8646-08566cfa4a66")
-		)
-		(pin "1"
-			(uuid "8d46cd8c-722b-4e23-8af4-62682788f127")
-		)
-		(instances
-			(project "Nixie Clock"
-				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C22")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -6882,7 +7170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ddcb3d6-8cf7-4d01-9673-f37ea3ea489b")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR0117"
 			(at 83.82 161.29 0)
 			(effects
 				(font
@@ -6932,7 +7220,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR090")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -6948,7 +7236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f063d9c-f4f4-4e68-ba8c-6a619e4986a1")
-		(property "Reference" "C33"
+		(property "Reference" "C53"
 			(at 218.44 60.9599 0)
 			(effects
 				(font
@@ -6957,7 +7245,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 218.44 63.4999 0)
 			(effects
 				(font
@@ -6966,7 +7254,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 215.5952 66.04 0)
 			(effects
 				(font
@@ -7002,7 +7290,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C33")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -7018,7 +7306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62b145c4-ed1b-4612-a4d1-fbe775460f30")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR0127"
 			(at 142.24 163.83 0)
 			(effects
 				(font
@@ -7068,7 +7356,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR097")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -7084,7 +7372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a13a4f5-dadc-4a45-a8fb-7d5f149964ed")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR0110"
 			(at 55.88 158.75 0)
 			(effects
 				(font
@@ -7134,7 +7422,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR086")
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -7149,7 +7437,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6af435e1-0776-439f-b457-f08653e34f93")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR0126"
 			(at 142.24 132.08 0)
 			(effects
 				(font
@@ -7200,77 +7488,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR096")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 26.67 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b5b9e22-f0d1-4ea1-8eaf-eee9f6267021")
-		(property "Reference" "R58"
-			(at 29.21 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1M"
-			(at 29.21 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.892 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 26.67 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8f64fca3-a5cf-485f-b3be-3dc5158ac065")
-		)
-		(pin "1"
-			(uuid "e194bed9-0776-486e-9d48-e8e47a9f7bca")
-		)
-		(instances
-			(project "Nixie Clock"
-				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R58")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -7286,7 +7504,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "703b66df-260d-4f7e-abad-d83321f13e42")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR0132"
 			(at 214.63 59.69 0)
 			(effects
 				(font
@@ -7336,7 +7554,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR098")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -7352,7 +7570,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7582a766-f0cb-4de4-bcc3-fcdf6a393d8b")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR0125"
 			(at 133.35 163.83 0)
 			(effects
 				(font
@@ -7402,7 +7620,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR095")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -7418,7 +7636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78290244-66cc-47a5-9a9a-995709c6aa65")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR0111"
 			(at 59.69 62.23 0)
 			(effects
 				(font
@@ -7468,7 +7686,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR076")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -7483,7 +7701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cdfaf80-5556-4d74-bd80-b9f0df05e9fe")
-		(property "Reference" "Q20"
+		(property "Reference" "Q3"
 			(at 107.95 138.4299 0)
 			(effects
 				(font
@@ -7501,7 +7719,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
 			(at 106.68 141.605 0)
 			(effects
 				(font
@@ -7543,7 +7761,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "Q20")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -7559,7 +7777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "816e1ab6-40b3-4ddb-bb40-370a71ce9cbb")
-		(property "Reference" "L5"
+		(property "Reference" "L1"
 			(at 95.25 123.19 90)
 			(effects
 				(font
@@ -7575,7 +7793,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H8mm"
 			(at 95.25 128.27 0)
 			(effects
 				(font
@@ -7611,7 +7829,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "L5")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -7626,7 +7844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84d0f038-de91-4a3a-834d-4b878c36913e")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR0120"
 			(at 97.79 33.02 0)
 			(effects
 				(font
@@ -7677,7 +7895,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR081")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -7693,7 +7911,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "886b7769-79ea-430a-a56c-8763ac065731")
-		(property "Reference" "U3"
+		(property "Reference" "U12"
 			(at 121.92 22.86 0)
 			(effects
 				(font
@@ -7748,7 +7966,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "U3")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -7764,7 +7982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "898087d5-3ba0-485e-81df-924852dc067e")
-		(property "Reference" "R59"
+		(property "Reference" "R34"
 			(at 80.01 68.5799 0)
 			(effects
 				(font
@@ -7782,7 +8000,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 79.248 69.85 90)
 			(effects
 				(font
@@ -7818,7 +8036,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R59")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -7834,7 +8052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "898972fd-a5bb-4701-97f8-6e8846acb444")
-		(property "Reference" "C26"
+		(property "Reference" "C43"
 			(at 59.69 147.3199 0)
 			(effects
 				(font
@@ -7852,7 +8070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 56.8452 152.4 0)
 			(effects
 				(font
@@ -7888,7 +8106,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C26")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -7904,7 +8122,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d07cf24-1f10-46a5-86b1-424533821cb8")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR0113"
 			(at 72.39 55.88 0)
 			(effects
 				(font
@@ -7954,7 +8172,73 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR077")
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8da58fd5-668e-4e40-a0f5-76e2dabc19c7")
+		(property "Reference" "#PWR0133"
+			(at 214.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "056ccec9-b3e5-42a9-8554-98c7ad500fa2")
+		)
+		(instances
+			(project "Nixie Clock"
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -7970,7 +8254,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90fb73f3-9970-43a5-9d5c-29a482ef8d91")
-		(property "Reference" "C24"
+		(property "Reference" "C46"
 			(at 111.76 31.7499 0)
 			(effects
 				(font
@@ -7988,7 +8272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 108.9152 36.83 0)
 			(effects
 				(font
@@ -8024,7 +8308,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C24")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -8040,7 +8324,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97850e7e-64d7-4161-9e57-a729fcabffa0")
-		(property "Reference" "R63"
+		(property "Reference" "R37"
 			(at 106.68 152.3999 0)
 			(effects
 				(font
@@ -8058,7 +8342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 102.362 153.67 90)
 			(effects
 				(font
@@ -8094,7 +8378,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R63")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -8110,7 +8394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99f1f241-bd64-42a5-8ae5-6f43bc902002")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR0118"
 			(at 85.09 80.01 0)
 			(effects
 				(font
@@ -8160,7 +8444,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR080")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -8176,7 +8460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a114dcb3-0be1-4948-86bc-c97051992745")
-		(property "Reference" "C28"
+		(property "Reference" "C44"
 			(at 72.39 147.3199 0)
 			(effects
 				(font
@@ -8194,7 +8478,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 69.5452 152.4 0)
 			(effects
 				(font
@@ -8230,7 +8514,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C28")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -8246,7 +8530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3b3932a-3bd5-4f38-af3c-f6ecbd8e2b66")
-		(property "Reference" "C25"
+		(property "Reference" "C47"
 			(at 119.38 66.0399 0)
 			(effects
 				(font
@@ -8264,7 +8548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 116.5352 71.12 0)
 			(effects
 				(font
@@ -8300,7 +8584,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C25")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -8315,7 +8599,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7fdf286-f0bd-4079-be72-6a48ba946460")
-		(property "Reference" "R62"
+		(property "Reference" "R38"
 			(at 129.54 66.548 90)
 			(effects
 				(font
@@ -8331,7 +8615,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 129.54 65.278 90)
 			(effects
 				(font
@@ -8367,7 +8651,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R62")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -8383,7 +8667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b50538f9-35f7-47bd-a58e-8976148ae6aa")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR0119"
 			(at 96.52 77.47 0)
 			(effects
 				(font
@@ -8433,7 +8717,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR082")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -8449,7 +8733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bae9f1f3-c533-40f7-aa38-fec2bade1259")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR0123"
 			(at 115.57 163.83 0)
 			(effects
 				(font
@@ -8499,7 +8783,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR093")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -8515,7 +8799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd6fb1e5-04fc-4669-8fb0-5304f2da6580")
-		(property "Reference" "U7"
+		(property "Reference" "U11"
 			(at 88.5033 132.08 0)
 			(effects
 				(font
@@ -8587,7 +8871,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "U7")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -8603,7 +8887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2ac45ce-bc09-4746-b268-19f5cd023f46")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR0124"
 			(at 133.35 33.02 0)
 			(effects
 				(font
@@ -8653,7 +8937,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR087")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -8669,7 +8953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2bdbbde-154f-453a-88f9-f65a76b601a9")
-		(property "Reference" "C30"
+		(property "Reference" "C51"
 			(at 191.77 60.0709 0)
 			(effects
 				(font
@@ -8687,7 +8971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
 			(at 188.9252 66.04 0)
 			(effects
 				(font
@@ -8723,7 +9007,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "C30")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -8739,7 +9023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d36f755b-3646-4225-b946-8b60dfca81dc")
-		(property "Reference" "D26"
+		(property "Reference" "D23"
 			(at 174.3075 52.07 0)
 			(effects
 				(font
@@ -8755,7 +9039,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-201AD_P12.70mm_Horizontal"
 			(at 173.99 58.42 0)
 			(effects
 				(font
@@ -8791,7 +9075,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "D26")
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -8799,7 +9083,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 105.41 0)
+		(at 34.29 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8807,8 +9091,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d565f1cd-a998-464f-a46e-d16283382871")
-		(property "Reference" "#PWR074"
-			(at 34.29 111.76 0)
+		(property "Reference" "#PWR0106"
+			(at 34.29 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8817,7 +9101,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 110.49 0)
+			(at 34.29 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8825,7 +9109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 105.41 0)
+			(at 34.29 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8834,7 +9118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 105.41 0)
+			(at 34.29 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8843,7 +9127,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 105.41 0)
+			(at 34.29 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8857,7 +9141,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR074")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -8872,7 +9156,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e86c4cea-5a39-4c22-80ef-8dd3813b6f66")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR0107"
 			(at 38.1 138.43 0)
 			(effects
 				(font
@@ -8923,7 +9207,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR084")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -8939,7 +9223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9851984-feaa-4663-9dea-436cf78dd2c7")
-		(property "Reference" "R65"
+		(property "Reference" "R42"
 			(at 180.34 68.5799 0)
 			(effects
 				(font
@@ -8957,7 +9241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 176.022 69.85 90)
 			(effects
 				(font
@@ -8993,7 +9277,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R65")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -9009,7 +9293,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea6a1303-2705-4349-a464-7696ec89c3a1")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR0116"
 			(at 81.28 95.25 0)
 			(effects
 				(font
@@ -9059,7 +9343,73 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR078")
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 176.53 128.27 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f221b470-ef41-4d8a-8d54-e4a36b26f3d1")
+		(property "Reference" "#FLG06"
+			(at 176.53 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 176.53 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 176.53 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "029e4e92-302a-40d8-ba75-6b80a980ad40")
+		)
+		(instances
+			(project "Nixie Clock"
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -9075,7 +9425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f257f288-4365-4607-a0ea-012da72425b8")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR0114"
 			(at 69.85 139.7 0)
 			(effects
 				(font
@@ -9126,7 +9476,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR089")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -9142,7 +9492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4510492-003f-4d99-88f6-b59789292e08")
-		(property "Reference" "U2"
+		(property "Reference" "U10"
 			(at 85.09 97.7899 90)
 			(effects
 				(font
@@ -9221,7 +9571,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "U2")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -9237,7 +9587,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb0ea57d-c9e0-4e66-89d9-198364e276e4")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR0112"
 			(at 68.58 158.75 0)
 			(effects
 				(font
@@ -9287,7 +9637,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR088")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -9303,7 +9653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb5c7519-b96d-42d7-a4b0-90916bb01a0c")
-		(property "Reference" "R64"
+		(property "Reference" "R41"
 			(at 180.34 60.9599 0)
 			(effects
 				(font
@@ -9321,7 +9671,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 176.022 62.23 90)
 			(effects
 				(font
@@ -9357,7 +9707,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "R64")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -9373,7 +9723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc1ca270-ae4a-4f6c-b06e-d56907298857")
-		(property "Reference" "D24"
+		(property "Reference" "D20"
 			(at 67.6275 52.07 0)
 			(effects
 				(font
@@ -9389,7 +9739,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-201AD_P12.70mm_Horizontal"
 			(at 67.31 58.42 0)
 			(effects
 				(font
@@ -9425,7 +9775,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "D24")
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -9441,7 +9791,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd67fdee-4af3-4b71-bf88-18818768f50a")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR0121"
 			(at 97.79 53.34 0)
 			(effects
 				(font
@@ -9491,7 +9841,7 @@
 		(instances
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b/265c84b6-9a62-4efe-96b4-9aa386e75e3d"
-					(reference "#PWR083")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
