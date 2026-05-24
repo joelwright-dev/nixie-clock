@@ -5,27 +5,15 @@
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [
-      "NCD",
-      "NCB",
-      "NX3",
-      "NX5",
-      "NCC",
-      "NX2",
-      "NX4",
-      "N3",
-      "N1",
-      "NX6",
-      "N4",
-      "NCA",
-      "NX1",
-      "N2",
       "ROT1SW",
-      "ROT2SW",
       "ROT1B",
-      "ROT1A",
       "ROT2B",
-      "ROT2A",
+      "ROT2SW",
+      "ROT1A",
       "LEDIN",
+      "ROT2A",
+      "NX2",
+      "/Nixie Tube/0",
       "/Nixie Tube/1",
       "/Nixie Tube/2",
       "/Nixie Tube/3",
@@ -35,7 +23,19 @@
       "/Nixie Tube/7",
       "/Nixie Tube/8",
       "/Nixie Tube/9",
-      "/Nixie Tube/0"
+      "N3",
+      "N4",
+      "N2",
+      "NCA",
+      "NCB",
+      "NX3",
+      "NCC",
+      "NX4",
+      "NCD",
+      "NX1",
+      "NX5",
+      "N1",
+      "NX6"
     ],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -47,6 +47,7 @@
       "vias": 1.0,
       "zones": 0.6
     },
+    "prototype_zone_fills": false,
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
@@ -64,6 +65,7 @@
       "vias",
       "footprint_text",
       "footprint_anchors",
+      "ratsnest",
       "grid",
       "footprints_front",
       "footprints_back",
@@ -82,9 +84,10 @@
       "shapes"
     ],
     "visible_layers": "ffffffff_ffffffff_fffffff7_ffffffff",
-    "zone_display_mode": 0
+    "zone_display_mode": 1
   },
   "git": {
+    "integration_disabled": false,
     "repo_type": "",
     "repo_username": "",
     "ssh_key": ""
@@ -121,12 +124,12 @@
     "col_widths": [
       186,
       171,
-      112,
-      79,
-      112,
-      112,
-      112,
-      83,
+      149,
+      120,
+      129,
+      152,
+      132,
+      126,
       112,
       112
     ],
@@ -137,6 +140,7 @@
     "filter_text": "",
     "group_by_constraint": false,
     "group_by_netclass": false,
+    "show_time_domain_details": false,
     "show_unconnected_nets": false,
     "show_zero_pad_nets": false,
     "sort_ascending": true,
@@ -147,6 +151,7 @@
     "files": []
   },
   "schematic": {
+    "hierarchy_collapsed": [],
     "selection_filter": {
       "graphics": true,
       "images": true,
@@ -154,6 +159,7 @@
       "lockedItems": false,
       "otherItems": true,
       "pins": true,
+      "ruleAreas": true,
       "symbols": true,
       "text": true,
       "wires": true
