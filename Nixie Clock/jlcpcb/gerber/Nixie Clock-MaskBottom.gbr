@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.3*%
-%TF.CreationDate,2026-05-17T18:27:40+10:00*%
-%TF.ProjectId,Nixie Clock,4e697869-6520-4436-9c6f-636b2e6b6963,rev?*%
+%TF.CreationDate,2026-06-27T16:24:07+10:00*%
+%TF.ProjectId,Nixie Clock,4e697869-6520-4436-9c6f-636b2e6b6963,2.1*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Bot*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.3) date 2026-05-17 18:27:40*
+G04 Created by KiCad (PCBNEW 10.0.3) date 2026-06-27 16:24:07*
 %MOMM*%
 %LPD*%
 G01*
@@ -148,9 +148,9 @@ X120955000Y-129700000D03*
 %TD*%
 D21*
 %TO.C,RV1*%
-X175715000Y-194200000D03*
-X175715000Y-191660000D03*
-X175715000Y-189120000D03*
+X177198125Y-199193883D03*
+X177198125Y-196653883D03*
+X177198125Y-194113883D03*
 %TD*%
 D22*
 %TO.C,mouse-bite-1mm-3mm*%
