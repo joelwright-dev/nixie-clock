@@ -8376,16 +8376,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 265.43) (xy 231.14 265.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a981da7-7f16-4fe5-80d1-44f2810b3fc9")
-	)
-	(wire
-		(pts
 			(xy 104.14 95.25) (xy 106.68 95.25)
 		)
 		(stroke
@@ -9346,16 +9336,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 265.43) (xy 231.14 267.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3cfc787-2f0e-404a-9397-eda9c80f59c1")
-	)
-	(wire
-		(pts
 			(xy 148.59 209.55) (xy 151.13 209.55)
 		)
 		(stroke
@@ -9613,16 +9593,6 @@
 			(type default)
 		)
 		(uuid "b959f54c-ebd9-4585-8c99-f0593c08ff64")
-	)
-	(wire
-		(pts
-			(xy 240.03 281.94) (xy 240.03 275.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba4965e1-477b-4fd2-a6b2-11abfb9eccb0")
 	)
 	(wire
 		(pts
@@ -10146,16 +10116,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 278.13) (xy 231.14 275.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eca949d4-27fb-45cb-960d-f976563717a5")
-	)
-	(wire
-		(pts
 			(xy 104.14 46.99) (xy 104.14 71.12)
 		)
 		(stroke
@@ -10448,6 +10408,30 @@
 			)
 		)
 	)
+	(global_label "ResMAXData-"
+		(shape bidirectional)
+		(at 222.25 281.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d04099c-c508-4458-924e-d972583f6579")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 239.3488 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "CLK"
 		(shape bidirectional)
 		(at 62.23 181.61 0)
@@ -10613,6 +10597,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "MAXData+"
+		(shape bidirectional)
+		(at 214.63 273.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "191a3e43-599b-43f1-a48d-438db7c75ec9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.9179 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -11384,6 +11392,30 @@
 			)
 		)
 	)
+	(global_label "MAXData-"
+		(shape bidirectional)
+		(at 214.63 281.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55f1ace7-ffd2-4078-9912-9215de69eb4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.9179 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "DFS"
 		(shape bidirectional)
 		(at 62.23 194.31 0)
@@ -11624,6 +11656,30 @@
 			)
 		)
 	)
+	(global_label "ResMAXData+"
+		(shape bidirectional)
+		(at 222.25 273.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "627c61c6-0a21-45e2-bfb0-b97b16d90a4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 239.3488 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "BCK"
 		(shape output)
 		(at 62.23 171.45 0)
@@ -11829,6 +11885,30 @@
 		(uuid "6e4b708b-3183-41b4-bf78-0d82acb21f58")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 359.0253 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "ResMAXData-"
+		(shape bidirectional)
+		(at 240.03 267.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7544a09d-dc8f-4a42-85d1-915c445fc7eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.9312 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12464,30 +12544,6 @@
 			)
 		)
 	)
-	(global_label "MAXData+"
-		(shape bidirectional)
-		(at 231.14 278.13 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a5481036-46bd-4b28-89c4-784374982a1c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 217.4279 278.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "NX3"
 		(shape input)
 		(at 243.84 151.13 0)
@@ -12848,6 +12904,30 @@
 			)
 		)
 	)
+	(global_label "ResMAXData+"
+		(shape bidirectional)
+		(at 240.03 265.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c21b7cab-4119-41f1-a0f2-f878813a3140")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.9312 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "NCD"
 		(shape input)
 		(at 213.36 101.6 180)
@@ -12909,30 +12989,6 @@
 		(uuid "c435c2bd-6b64-4ac1-8180-a7628b493e2c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 200.6759 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "MAXData-"
-		(shape bidirectional)
-		(at 240.03 281.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c533ccde-bc8e-40c3-8757-2f56cb87c5fe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.3179 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15645,88 +15701,6 @@
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 240.03 271.78 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2a42fa71-1208-4c75-a464-d19fde712f76")
-		(property "Reference" "R77"
-			(at 237.49 270.5099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "33"
-			(at 237.49 273.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 241.808 271.78 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 240.03 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b07588fe-5ddc-4a30-8c0f-982ee9819a25")
-		)
-		(pin "2"
-			(uuid "392ba763-5c64-420d-9111-66be6d38af6c")
-		)
-		(instances
-			(project "Nixie Clock"
-				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
-					(reference "R77")
 					(unit 1)
 				)
 			)
@@ -20098,6 +20072,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 218.44 281.94 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7d43bc9b-8e46-47db-b9f8-6f8c37a85ff0")
+		(property "Reference" "R77"
+			(at 219.7101 279.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 217.1701 279.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 218.44 283.718 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 281.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5716467-69de-4162-9522-136fde99484b")
+		)
+		(pin "2"
+			(uuid "bf097c9d-06e5-4067-997e-4fff3147d8b0")
+		)
+		(instances
+			(project "Nixie Clock"
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
+					(reference "R77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 46.99 217.17 0)
 		(unit 1)
@@ -22148,86 +22204,6 @@
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 231.14 271.78 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b0782924-1031-4c2e-a784-73ef7650a3b6")
-		(property "Reference" "R76"
-			(at 224.79 271.78 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33"
-			(at 227.33 271.78 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 232.918 271.78 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 231.14 271.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "23795ae8-a845-4c98-ae21-8a50ee59eaee")
-		)
-		(pin "2"
-			(uuid "caad4b86-7e80-49ba-9afd-333bfb626ee3")
-		)
-		(instances
-			(project "Nixie Clock"
-				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
-					(reference "R76")
 					(unit 1)
 				)
 			)
@@ -24524,6 +24500,86 @@
 			(project "Nixie Clock"
 				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
 					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 273.05 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d18b5229-0026-4e9e-a57f-ca3a7840a5b1")
+		(property "Reference" "R76"
+			(at 218.44 266.7 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 218.44 269.24 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 218.44 274.828 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c544c6e7-d89d-4e0f-b670-e4290cbb5a99")
+		)
+		(pin "2"
+			(uuid "6fc6f4dd-9719-4210-8560-a0b40abda109")
+		)
+		(instances
+			(project "Nixie Clock"
+				(path "/7c3e665c-e8e0-40a0-9c31-1e86cb35239b"
+					(reference "R76")
 					(unit 1)
 				)
 			)
